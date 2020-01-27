@@ -70,29 +70,33 @@
 					opacity 0.15s ease-in;
 	
 		position: absolute;
-		top: 0;
+		top: calc(50% - 1.5em);
 		opacity: 0;
 	}
 	
-	.to-right-tooltip[data-tooltip]::before{
+	.to-left-tooltip[data-tooltip]::before{
 		border-radius: 0.3em 1em 1em 0.3em;
 		right: 100%;
+		top: calc(50% - 1.5em);
 	}
 	
-	.to-left-tooltip[data-tooltip]::before{
+	.to-right-tooltip[data-tooltip]::before{
 		border-radius: 1em 0.3em 0.3em 1em;
 		left: 100%;
+		top: calc(50% - 1.5em);
 	}
 	
 	.round-button[data-tooltip]:hover::before{
 		opacity: 1;
 	}
 	
-	.to-right-tooltip[data-tooltip]:hover::before{
+	.to-left-tooltip[data-tooltip]:hover::before{
 		right: calc(100% + 1em);
+		top: calc(50% - 1.5em);
 	}
 	
-	.to-left-tooltip[data-tooltip]:hover::before{
+	.to-right-tooltip[data-tooltip]:hover::before{
 		left: calc(100% + 1em);
+		top: calc(50% - 1.5em);
 	}
 }

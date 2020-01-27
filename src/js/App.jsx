@@ -45,17 +45,31 @@ export class App extends Component {
 	
 	render() {
 		return (
-			<div style = {{width: "calc(40px + 5vw)", backgroundColor: "#232425", position: "absolute", right:"200px", bottom:"100px"}}>
-				<CornerMenu 
-					elements = { elements }
-					position = { { 
-						bottom: true, 
-						top: false,
-						toRight: true
-					} }
-				/>
-				
-			</div>
+			<React.Fragment>
+				<div style = {{width: "calc(40px + 5vw)", position: "absolute", left:"200px", top:"100px"}}>
+					<CornerMenu 
+						elements = { elements }
+						position = { { 
+							bottom: false, 
+							top: true,
+							toRight: true
+						} }
+					/>
+					
+				</div>
+				{/* <div style = {{width: "calc(40px + 5vw)", position: "absolute", right:"200px", bottom:"100px"}}>
+					<CornerMenu 
+						elements = { elements }
+						position = { { 
+							bottom: true, 
+							top: false,
+							toRight: false,
+							toLeft: true
+						} }
+					/>
+					
+				</div> */}
+			</React.Fragment>
 		)
 	}
 }
