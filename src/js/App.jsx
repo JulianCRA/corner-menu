@@ -9,7 +9,7 @@ export class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				Welcome back, {this.props.name}
+				huh
 			</React.Fragment>
 		)
 	}
