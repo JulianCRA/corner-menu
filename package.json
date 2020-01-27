@@ -1,7 +1,7 @@
 {
-  "name": "to-new-beginnings",
+  "name": "corner-menu",
   "version": "1.0.0",
-  "description": "Now that everything is clear(er), try again.",
+  "description": "Corner menu",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --config webpack.dev.js --host 0.0.0.0",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JulianCRA/lets-start-again.git"
+    "url": "git+https://github.com/JulianCRA/corner-menu.git"
   },
   "keywords": [
     "new",
@@ -20,9 +20,9 @@
   "author": "Julian R.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JulianCRA/lets-start-again/issues"
+    "url": "https://github.com/JulianCRA/corner-menu.git"
   },
-  "homepage": "https://github.com/JulianCRA/lets-start-again#readme",
+  "homepage": "https://github.com/JulianCRA/corner-menu.git",
   "devDependencies": {
     "@babel/core": "^7.7.2",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
@@ -35,7 +35,6 @@
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "p5": "^0.10.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
