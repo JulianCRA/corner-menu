@@ -55,7 +55,7 @@
 
 
 
-/* @media (hover:hover){
+@media (hover:hover){
 	.round-button[data-tooltip]:not(:active)::before{
 		display: flex;
 		min-width: max-content;
@@ -74,12 +74,12 @@
 		opacity: 0;
 	}
 	
-	.right-menu-btn[data-tooltip]::before{
+	.to-right-tooltip[data-tooltip]::before{
 		border-radius: 0.3em 1em 1em 0.3em;
 		right: 100%;
 	}
 	
-	.left-menu-btn[data-tooltip]::before{
+	.to-left-tooltip[data-tooltip]::before{
 		border-radius: 1em 0.3em 0.3em 1em;
 		left: 100%;
 	}
@@ -88,11 +88,11 @@
 		opacity: 1;
 	}
 	
-	.right-menu-btn[data-tooltip]:hover::before{
+	.to-right-tooltip[data-tooltip]:hover::before{
 		right: calc(100% + 1em);
 	}
 	
-	.left-menu-btn[data-tooltip]:hover::before{
+	.to-left-tooltip[data-tooltip]:hover::before{
 		left: calc(100% + 1em);
 	}
-} */
+}
