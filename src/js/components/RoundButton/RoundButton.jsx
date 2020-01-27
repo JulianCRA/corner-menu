@@ -11,7 +11,7 @@ const RoundButton = ({tooltip, label, image, action, position}) => {
 			[styles.toLeftTooltip] : position.toLeft
 		}
 	)
-		console.log('cn :', cn);
+		
 	return (
 		<div
 			data-tooltip = {tooltip} 

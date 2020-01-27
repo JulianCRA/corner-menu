@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import generalStyles from '../RoundButton/RoundButton.module.css'
 import styles from './RoundSlider.module.css'
 
-const RoundSlider = ({tooltip, label, image, hidden, min, max, value, step, position, changeAction}) => {
+const RoundSlider = ({tooltip, label, image, hidden, min, max, value, step, position, action}) => {
 	const [isSliderActive, toggleSlider] = React.useState(false)
 
 	if(hidden && isSliderActive) toggleSlider(false)
@@ -34,7 +34,7 @@ const RoundSlider = ({tooltip, label, image, hidden, min, max, value, step, posi
 					}
 				)}
 			>
-				<input	onChange = { e => console.log(e.target.value)}//{e => changeAction(e)}
+				<input	onChange = { e => action(e.target.value) }
 						defaultValue = {value}
 						className = {styles.slider}
 						type = "range" 
@@ -58,4 +58,4 @@ const RoundSlider = ({tooltip, label, image, hidden, min, max, value, step, posi
 	step: PropTypes.number.isRequired
 }*/
 
-export default RoundSlider
+export default React.memo(RoundSlider)

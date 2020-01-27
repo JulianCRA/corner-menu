@@ -26,7 +26,7 @@ const CornerMenu = ({elements, position}) => {
 			case "range":
 				return(
 					<RoundSlider 
-						changeAction = {element.changeAction}
+						action = {element.action}
 						hidden={!openMenu}
 						tooltip = {element.tooltip}
 						label = {element.label}

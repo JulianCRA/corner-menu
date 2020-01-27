@@ -41,7 +41,7 @@ const elements = [
 		max : 1,
 		step : 0.025,
 		value : 0.5,
-		changeAction : (e) => setAction({newAction : "updateThreshold", value : e.target.value})
+		action : value => action(value)
 	},
 ]
 
