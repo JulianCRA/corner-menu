@@ -34,11 +34,15 @@ const elements = [
 		action : () => action("animate")
 	},
 	{
-		type : "button",
-		label : "LEGO IT!",
+		type : "range",
+		label : "THRESHOLD",
 		image : `https://i.picsum.photos/id/${Math.round(Math.random()*500)}/200/200.jpg`,
-		action : () => action("lego")
-	}
+		min : 0,
+		max : 1,
+		step : 0.025,
+		value : 0.5,
+		changeAction : (e) => setAction({newAction : "updateThreshold", value : e.target.value})
+	},
 ]
 
 export class App extends Component {
@@ -57,7 +61,7 @@ export class App extends Component {
 					/>
 					
 				</div>
-				{/* <div style = {{width: "calc(40px + 5vw)", position: "absolute", right:"200px", bottom:"100px"}}>
+				<div style = {{width: "calc(40px + 5vw)", position: "absolute", right:"200px", bottom:"100px"}}>
 					<CornerMenu 
 						elements = { elements }
 						position = { { 
@@ -68,7 +72,7 @@ export class App extends Component {
 						} }
 					/>
 					
-				</div> */}
+				</div>
 			</React.Fragment>
 		)
 	}

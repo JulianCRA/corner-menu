@@ -2,6 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 
 import RoundButton from '../RoundButton'
+import RoundSlider from '../RoundSlider'
 import CircularMenuToggler from '../CircularMenuToggler'
 
 import styles from './CornerMenu.module.css'
@@ -26,7 +27,7 @@ const CornerMenu = ({elements, position}) => {
 				return(
 					<RoundSlider 
 						changeAction = {element.changeAction}
-						hidden={!isMenuOpen}
+						hidden={!openMenu}
 						tooltip = {element.tooltip}
 						label = {element.label}
 						image = {element.image}
