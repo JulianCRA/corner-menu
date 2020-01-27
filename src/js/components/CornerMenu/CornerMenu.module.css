@@ -1,0 +1,32 @@
+.corner-menu{
+	width: 100%;
+	background-color: blueviolet;
+}
+
+.trigger-button{
+	width: 100%;
+
+	position: relative;
+	box-sizing: border-box;
+	user-select: none;
+	cursor: pointer;
+	pointer-events: auto;
+	border: solid 20px #dfdfdf;
+
+	border-radius: 50%;
+	background-color: #4a484d;
+	margin-bottom: 0;
+	line-height: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.trigger-button::before {
+	border-radius: 50%;
+	content: "";
+	padding-top: 100%;
+	display: block;
+}

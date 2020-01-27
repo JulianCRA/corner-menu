@@ -1,16 +1,22 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+
+import CornerMenu from './components/CornerMenu'
+import RoundButton from './components/RoundButton'
 
 export class App extends Component {
-	static propTypes = {
-		'name' : PropTypes.string
-	}
-
+	
 	render() {
 		return (
-			<React.Fragment>
-				huh
-			</React.Fragment>
+			<div style = {{width: "calc(40px + 5vw)", backgroundColor: "#232425"}}>
+				<CornerMenu 
+					elements = { [1, 2, 3, 4, 5, 6, 7] }
+					position = { { 
+						bottom: true, 
+						left: true
+					} }
+				/>
+				
+			</div>
 		)
 	}
 }
